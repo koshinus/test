@@ -33,5 +33,6 @@
 
 *.user
 
+bin
 build/*
 bin/*
