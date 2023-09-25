@@ -1,10 +1,20 @@
-// main.cpp
+// func.cxx
+module;
+
+import <iostream>;
+
+export module mod2;
+
 import mod1;
-import mod2;
 
-//#include <iostream>
+export void func2() {
+    std::cout << "hello, world!" << func1(8) << std::endl;
+}
 
-int main(){
-    func1();
-    show_val(func2(9));
+
+export
+template< typename T >
+void show_val(T val)
+{
+	std::cout << val << std::endl;
 }
